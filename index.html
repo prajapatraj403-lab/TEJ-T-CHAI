@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TEJ-T CHAI — Premium Assam CTC Tea with Elaichi, Black Pepper & Tulsi. 100g सिर्फ ₹69. Rajasthan delivery.">
+  <title>TEJ-T CHAI | हर घूंट में दमदार स्वाद</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <span>🌿 PREMIUM QUALITY &nbsp; | &nbsp; 100% VEG &nbsp; | &nbsp; NATURAL INGREDIENTS</span>
+    <span>📍 अभी सिर्फ Rajasthan में Delivery</span>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">TEJ-T <small>CHAI</small></a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#track">Track Order</a>
+      </nav>
+      <button class="cart-button" onclick="openCart()">🛒 <span>Cart</span> (<b id="cartCount">0</b>)</button>
+      <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PREMIUM ASSAM CTC TEA</p>
+          <h1>TEJ-T <span>CHAI</span></h1>
+          <h2>हर घूंट में दमदार स्वाद</h2>
+          <p class="hero-text">इलायची, काली मिर्च और तुलसी के प्राकृतिक स्पर्श के साथ Premium Assam CTC Tea.</p>
+          <div class="price-badge">100g Pack — सिर्फ <strong>₹69</strong></div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#product">🛒 SHOP NOW</a>
+            <a class="btn btn-white" id="heroWhatsapp" target="_blank" rel="noopener">💬 WHATSAPP ORDER</a>
+          </div>
+          <div class="mini-features">
+            <div><span>🌿</span><b>Natural</b><small>Ingredients</small></div>
+            <div><span>☕</span><b>Strong</b><small>Aroma</small></div>
+            <div><span>✨</span><b>Rich</b><small>Taste</small></div>
+            <div><span>🌱</span><b>Perfect</b><small>Blend</small></div>
+          </div>
+        </div>
+        <div class="hero-product">
+          <img src="assets/tej-t-product.jpeg" alt="TEJ-T Premium Blend Elaichi and Black Pepper Tea">
+          <div class="floating-price">₹69<br><small>100g</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div>🚚 <b>RAJASTHAN DELIVERY</b><small>अभी सिर्फ राजस्थान</small></div>
+      <div>🌿 <b>NATURAL INGREDIENTS</b><small>Premium Blend</small></div>
+      <div>🔒 <b>SAFE PAYMENT</b><small>Secure Checkout</small></div>
+      <div>⭐ <b>QUALITY ASSURED</b><small>Premium Tea Leaves</small></div>
+    </section>
+
+    <section class="section" id="product">
+      <div class="container">
+        <div class="section-heading">
+          <p>OUR PREMIUM PRODUCT</p>
+          <h2>हमारा प्रीमियम प्रोडक्ट</h2>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/tej-t-product.jpeg" alt="TEJ-T 100g pack">
+          </div>
+          <div class="product-info">
+            <span class="tag">BEST SELLER</span>
+            <h3>TEJ-T Premium Blend</h3>
+            <h4>इलायची & काली मिर्च चाय</h4>
+            <p>Premium Assam CTC Tea का दमदार blend, जिसमें इलायची, काली मिर्च और तुलसी पत्ती का natural touch है।</p>
+            <ul class="check-list">
+              <li>Assam CTC Tea</li>
+              <li>इलायची (Elaichi)</li>
+              <li>काली मिर्च (Black Pepper)</li>
+              <li>तुलसी पत्ती (Tulsi Leaves)</li>
+              <li>Strong Aroma & Rich Taste</li>
+              <li>100% Veg</li>
+            </ul>
+          </div>
+          <div class="buy-box">
+            <span>सिर्फ</span>
+            <strong>₹69</strong>
+            <small>100g Pack</small>
+            <div class="qty">
+              <button onclick="changeQty(-1)">−</button>
+              <span id="qty">1</span>
+              <button onclick="changeQty(1)">+</button>
+            </div>
+            <button class="btn btn-primary full" onclick="addToCart()">🛒 ADD TO CART</button>
+            <button class="btn btn-gold full" onclick="buyNow()">⚡ BUY NOW</button>
+            <a class="btn btn-white full" id="productWhatsapp" target="_blank" rel="noopener">💬 WHATSAPP ORDER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cream" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p>WHY TEJ-T CHAI?</p>
+          <h2>क्यों चुनें TEJ-T CHAI?</h2>
+        </div>
+        <div class="benefits">
+          <article><div class="benefit-icon">🍃</div><h3>Premium Assam CTC</h3><p>बेहतरीन स्वाद और गाढ़ा रंग।</p></article>
+          <article><div class="benefit-icon">🌿</div><h3>Natural Ingredients</h3><p>इलायची, काली मिर्च और तुलसी।</p></article>
+          <article><div class="benefit-icon">☕</div><h3>Rich Aroma & Taste</h3><p>हर घूंट में खुशबू और दमदार स्वाद।</p></article>
+          <article><div class="benefit-icon">🌱</div><h3>Traditional Blend</h3><p>पारंपरिक ingredients का बेहतरीन मेल।</p></article>
+          <article><div class="benefit-icon">✓</div><h3>100% Veg</h3><p>शुद्ध और भरोसेमंद।</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container how">
+        <div>
+          <div class="section-heading left">
+            <p>HOW TO ENJOY</p>
+            <h2>एक दमदार कप कैसे बनाएं?</h2>
+          </div>
+          <div class="steps">
+            <div><b>01</b><span>1 कप पानी उबालें</span></div>
+            <div><b>02</b><span>1–2 चम्मच चाय डालें</span></div>
+            <div><b>03</b><span>2–3 मिनट उबालें</span></div>
+            <div><b>04</b><span>दूध और चीनी डालें, गरमागरम enjoy करें</span></div>
+          </div>
+        </div>
+        <div class="tea-art">☕<span>TEJ-T</span></div>
+      </div>
+    </section>
+
+    <section class="section cream" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <p>CUSTOMER REVIEWS</p>
+          <h2>हमारे ग्राहकों की राय</h2>
+        </div>
+        <div class="reviews">
+          <article><div class="avatar">R</div><h3>Ramesh Sharma</h3><div class="stars">★★★★★</div><p>“बहुत बढ़िया चाय है। खुशबू और स्वाद दोनों शानदार हैं।”</p></article>
+          <article><div class="avatar">S</div><h3>Sunita Choudhary</h3><div class="stars">★★★★★</div><p>“इलायची और काली मिर्च का स्वाद शानदार है। चाय का aroma भी अच्छा है।”</p></article>
+          <article><div class="avatar">M</div><h3>Mahendra Singh</h3><div class="stars">★★★★★</div><p>“क्वालिटी अच्छी है और ₹69 में कीमत भी उचित है।”</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="track">
+      <div class="container">
+        <div class="track-box">
+          <div class="section-heading">
+            <p>ORDER TRACKING</p>
+            <h2>अपना ऑर्डर ट्रैक करें</h2>
+          </div>
+          <p>Order ID डालें और अपना current status देखें।</p>
+          <div class="track-form">
+            <input id="orderId" placeholder="जैसे TEJT1025">
+            <button class="btn btn-primary" onclick="trackOrder()">Track Order</button>
+          </div>
+          <div id="trackResult"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter-section">
+      <div class="container newsletter">
+        <div><p>TEJ-T TEA LOVERS FAMILY</p><h2>Offers और नए updates पाएं</h2></div>
+        <form onsubmit="subscribe(event)">
+          <input id="email" type="email" required placeholder="आपका email address">
+          <button class="btn btn-gold">SUBSCRIBE</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#home">TEJ-T <small>CHAI</small></a>
+        <p>Premium Assam CTC Tea with Elaichi, Black Pepper & Tulsi.</p>
+        <p>📍 Rajasthan, India</p>
+      </div>
+      <div><h4>QUICK LINKS</h4><a href="#home">Home</a><a href="#about">About</a><a href="#product">Product</a><a href="#reviews">Reviews</a></div>
+      <div><h4>CUSTOMER SERVICE</h4><a href="#track">Track Order</a><a href="#">Shipping Policy</a><a href="#">Return & Refund</a><a href="#">Privacy Policy</a></div>
+      <div><h4>CONTACT</h4><p>☎ +91 9511551294</p><p>💬 WhatsApp</p><p>✉ info@tejtchai.com</p><p>🕘 Mon–Sat: 9 AM–7 PM</p></div>
+    </div>
+    <div class="copyright">© 2026 TEJ-T CHAI. All Rights Reserved. | Delivery currently available only in Rajasthan.</div>
+  </footer>
+
+  <div class="modal" id="cartModal">
+    <div class="modal-box">
+      <button class="close" onclick="closeCart()">×</button>
+      <h2>🛒 आपका Cart</h2>
+      <div id="cartContent" class="cart-content"></div>
+      <div class="notice">अभी delivery केवल Rajasthan में उपलब्ध है।</div>
+      <button class="btn btn-primary full" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-box">
+      <button class="close" onclick="closeCheckout()">×</button>
+      <h2>Checkout</h2>
+      <form id="checkoutForm" class="checkout-form" onsubmit="placeOrder(event)">
+        <input id="name" required placeholder="पूरा नाम">
+        <input id="phone" required inputmode="numeric" maxlength="10" pattern="[0-9]{10}" placeholder="10 digit mobile number">
+        <textarea id="address" required placeholder="पूरा पता"></textarea>
+        <input id="city" required placeholder="City / Village">
+        <select id="state" required>
+          <option value="">State चुनें</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Other">Other State</option>
+        </select>
+        <input id="pincode" required inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="6 digit PIN Code">
+        <select id="payment" required>
+          <option value="">Payment Method</option>
+          <option value="cod">Cash on Delivery</option>
+          <option value="online">Online Payment</option>
+        </select>
+        <div class="notice">Online payment Razorpay checkout से होगा। Test mode में test credentials का उपयोग करें; live करने से पहले Live API keys लगाएँ।</div>
+        <button id="placeOrderBtn" class="btn btn-gold full">PLACE ORDER</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
