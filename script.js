@@ -1,6 +1,6 @@
 const WHATSAPP_NUMBER = "919511551294";
 const PRICE = 69;
-const BACKEND_URL = "https://tej-t-chai.onrender.com/";
+const BACKEND_URL = "https://tej-t-chai.onrender.com";
 
 let qty = 1;
 let cartQty = 0;
