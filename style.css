@@ -938,11 +938,11 @@ footer {
 }
 
 .tea-art img {
-  width: 280px;
-  max-width: 85%;
-  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  height: 350px;
   object-fit: contain;
-  filter: drop-shadow(0 15px 15px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 15px 18px rgba(0,0,0,0.25));
 }
 
 .tea-art span {
