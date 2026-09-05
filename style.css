@@ -965,3 +965,148 @@ footer {
     radial-gradient(circle at 10% 80%, rgba(5, 67, 45, 0.07), transparent 30%),
     linear-gradient(135deg, #fffdf7 0%, #f7f0df 50%, #fffaf0 100%);
 }
+/* =====================================
+   MOBILE VIEW - FINAL IMPROVEMENT
+===================================== */
+
+@media (max-width: 600px) {
+
+  /* Header */
+  .nav {
+    height: 62px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .cart-button {
+    font-size: 12px;
+    padding: 9px 12px;
+  }
+
+  /* Product cards */
+  .product-card {
+    padding: 14px;
+    gap: 15px;
+    border-radius: 14px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .product-card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .product-card li {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  /* Product image */
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Price box */
+  .price-badge {
+    padding: 10px;
+  }
+
+  .price-badge strong {
+    font-size: 30px;
+  }
+
+  /* Buttons */
+  .product-card .btn {
+    width: 100%;
+    min-height: 38px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  /* How to enjoy */
+  .how {
+    padding: 22px 15px;
+    gap: 25px;
+    border-radius: 20px;
+  }
+
+  .steps div {
+    padding: 10px 4px;
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .steps b {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    font-size: 12px;
+  }
+
+  .tea-art {
+    height: auto;
+    padding: 8px;
+  }
+
+  .tea-art img {
+    height: auto;
+    max-height: 280px;
+  }
+
+  /* Reviews */
+  .reviews article {
+    padding: 17px;
+  }
+
+  .reviews h3 {
+    font-size: 14px;
+  }
+
+  .reviews p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* Track Order */
+  .track-box {
+    padding: 25px 15px;
+  }
+
+  .track-form {
+    width: 100%;
+  }
+
+  .track-form input,
+  .track-form button {
+    width: 100%;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 22px 15px;
+    border-radius: 14px;
+  }
+
+  .newsletter h2 {
+    font-size: 20px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 15px 15px;
+  }
+
+}
