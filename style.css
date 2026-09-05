@@ -950,3 +950,18 @@ footer {
 .tea-art span {
   display: none;
 }
+/* HOW TO ENJOY - PREMIUM BACKGROUND */
+
+.how {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.section:has(.how) {
+  background:
+    radial-gradient(circle at 85% 25%, rgba(218, 177, 83, 0.16), transparent 30%),
+    radial-gradient(circle at 10% 80%, rgba(5, 67, 45, 0.07), transparent 30%),
+    linear-gradient(135deg, #fffdf7 0%, #f7f0df 50%, #fffaf0 100%);
+}
