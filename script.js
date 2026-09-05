@@ -1173,22 +1173,23 @@ function applyCoupon() {
    CHECKOUT
 ========================= */
 
+function closeCart() {
+  const modal = document.getElementById("cartModal");
+
+  if (modal) {
+    modal.classList.remove("open");
+  }
+}
+
 function checkout() {
 
   if (cart.length === 0) {
-
-    alert(
-      "पहले product cart में add करें।"
-    );
-
+    alert("पहले product cart में add करें।");
     return;
-
   }
 
   closeCart();
-
   openCheckout();
-
 }
 
 
